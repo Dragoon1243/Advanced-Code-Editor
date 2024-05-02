@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/855c156563.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<div id="language-selection">
+    <h1>What type of language are you using today?</h1>
+    <select id="language-select">
+        <option value="html"><i class="fa-brands fa-html5"></i> HTML</option>
+        <option value="css"><i class="fa-brands fa-css3-alt"></i> CSS</option>
+        <option value="js"><i class="fa-brands fa-js"></i> JavaScript</option>
+        <option value="python"><i class="fa-brands fa-python"></i> Python</option>
+        <option value="java"><i class="fa-brands fa-java"></i> Java</option>
+    </select>
+    <button id="goahead-button">Go Ahead</button>
+</div>
+
+<div id="code-editor" style="display: none;">
+    <div class="container">
+        <div class="left">
+            <label id="language-label"></label>
+            <textarea id="code-input"></textarea>
+            <button id="execute-button">Execute</button>
+        </div>
+        <div class="right">
+            <label><i class="fa-solid fa-play"></i> Output</label>
+            <textarea id="output" readonly></textarea>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
